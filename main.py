@@ -45,7 +45,8 @@ app = Flask("__name__")
 api = Api()
 api.add_resource(Main, "/api/books/<int:id_book>")
 api.init_app(app)
+port_ = 2222
 
 if __name__ == "__main__":
-    app.run(debug = True, port = 8888, host = "127.0.0.1")
+    app.run(debug = True, port = port_, host = "127.0.0.1")
 
